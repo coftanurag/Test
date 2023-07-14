@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 16px;
+            padding:0px 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+      header .container{
+        min-height: 100px;
+        background-color:rgb(241, 81, 14);
+        color: rgb(11, 11, 11);
+        border-radius: 10px;
+        font-weight: bold;
+      }
+
+      section .container{
+        color: rgb(11, 11, 11);
+        background-color: antiquewhite;
+        justify-content: space-between;
+      } 
+     
+      section .container .box{
+        flex:1;
+        margin:10px;
+        height: 400px;
+        border-radius: 10px;
+        font-weight: bold;
+        padding:20px;
+       
+
+      }
+      section .box:nth-child(1){
+        background-color: yellow;
+        align-items: stretch;
+     }
+     section .box:nth-child(2){
+        /* flex:2; */
+        background-color: aqua;
+     }
+     section .box:nth-child(3){
+        background-color: pink;
+     }
+     footer .container{
+        min-height: 100px;
+        background-color:rgb(21, 178, 107);
+        color: rgb(11, 11, 11);
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: x-large;
+      }
+  @media screen and (max-width:700px){
+
+    section .container{
+        color: rgb(11, 11, 11);
+        background-color: antiquewhite;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+      } 
+     
+      section .container .box{
+
+        margin:10px;
+        height: 400px;
+        border-radius: 10px;
+        font-weight: bold;
+        padding:20px;
+       
+
+      }
+      section .box:nth-child(1){
+        background-color: yellow;
+        order:2;
+     }
+     section .box:nth-child(2){
+        flex-basis: 100%;
+        order:1;
+        width:100%;
+        background-color: aqua;
+
+     }
+     section .box:nth-child(3){
+        background-color: pink;
+        order:2;
+     }
+    
+
+
+  }
+    
+  
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div>
+                Header
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="box">
+                <div>
+                    Aside1
+                </div>
+            </div>
+            
+            <div class="box">
+                <div>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis inventore obcaecati dolorem, nulla tenetur consectetur? Iure, sapiente animi, nemo expedita iusto alias dicta, iste cumque quisquam ad quos non fugit!
+                </div>
+            </div>
+            
+            <div class="box">
+                <div>
+                    Aside2
+                </div>
+            </div>
+            </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <div>
+                        <i class="fa fa-facebook"></i>Footer<span class="fa fa-car"></span>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+    </section>
+</body>
+</html>
